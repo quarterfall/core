@@ -1,22 +1,27 @@
-export { EditorType } from "./data/EditorType";
 export { arrayMove } from "./Array";
 export type { ArrayMoveOptions } from "./Array";
+export type { Action } from "./data/Action";
+export { ActionType } from "./data/ActionType";
 export { AnalyticsType } from "./data/AnalyticsType";
+export type { Assessment } from "./data/Assessment";
+export { AssessmentMethod } from "./data/AssessmentMethod";
+export { AssessmentType } from "./data/AssessmentType";
 export { BlockType } from "./data/BlockType";
 export type { Choice } from "./data/Choice";
+export { courseImages, defaultCourseImage } from "./data/CourseImages";
 export { DatabaseDialect } from "./data/DatabaseDialect";
+export { EditorType } from "./data/EditorType";
 export {
-  SystemEventType,
-  OrganizationEventType,
-  CourseEventType,
-  ModuleEventType,
   AssignmentEventType,
   BlockEventType,
-  UserEventType,
+  CourseEventType,
+  ModuleEventType,
+  OrganizationEventType,
   SubmissionEventType,
+  SystemEventType,
+  UserEventType,
 } from "./data/EventType";
 export type { EventType } from "./data/EventType";
-export { courseImages, defaultCourseImage } from "./data/CourseImages";
 export { NotificationType } from "./data/NotificationType";
 export {
   ProgrammingLanguage,
@@ -26,3 +31,4 @@ export {
 export { PublicLicenseType } from "./data/PublicLicenseType";
 export { SortingOrder } from "./data/SortingOrder";
 export { StickerType } from "./data/StickerType";
+export type { UnitTest } from "./data/UnitTest";
