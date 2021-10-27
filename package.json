@@ -1,23 +1,27 @@
 {
-  "name": "@quarterfall/core",
-  "version": "0.0.8",
-  "description": "Core data types and utilities of the Quarterfall platform.",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "npx tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/quarterfall/core.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/quarterfall/core/issues"
-  },
-  "homepage": "https://github.com/quarterfall/core#readme",
-  "devDependencies": {
-    "typescript": "^4.4.4"
-  }
+    "name": "@quarterfall/core",
+    "version": "0.0.9",
+    "description": "Core data types and utilities of the Quarterfall platform.",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "npx tsc",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/quarterfall/core.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/quarterfall/core/issues"
+    },
+    "homepage": "https://github.com/quarterfall/core#readme",
+    "devDependencies": {
+        "prettier": "^2.4.1",
+        "typescript": "^4.4.4"
+    },
+    "prettier": {
+        "tabWidth": 4
+    }
 }
