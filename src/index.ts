@@ -19,18 +19,20 @@ export {
     OrganizationEventType,
     SubmissionEventType,
     SystemEventType,
-    UserEventType,
+    UserEventType
 } from "./data/EventType";
 export type { EventType } from "./data/EventType";
 export { NotificationType } from "./data/NotificationType";
 export {
     ProgrammingLanguage,
     supportedLanguagesSyntaxHighlighting,
-    supportedLanguagesUnitTesting,
+    supportedLanguagesUnitTesting
 } from "./data/ProgrammingLanguage";
 export { PublicLicenseType } from "./data/PublicLicenseType";
 export { SortingOrder } from "./data/SortingOrder";
 export { StickerType } from "./data/StickerType";
 export type { UnitTest } from "./data/UnitTest";
-export type { AllowedCharacters } from "./IdGenerator";
 export { generateId } from "./IdGenerator";
+export type { AllowedCharacters } from "./IdGenerator";
+export { patterns } from "./Validator";
+
