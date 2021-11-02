@@ -47,6 +47,7 @@ export enum SubmissionEventType {
     SubmissionCreated = "submission.created",
     SubmissionDeleted = "submission.deleted",
     SubmissionReopened = "submission.reopened",
+    SubmissionApproved = "submission.approved",
     SubmissionSubmitted = "submission.submitted",
     SubmissionBlockFeedbackGenerated = "submission.block.feedback_generated",
     SubmissionBlockCompleted = "submission.block.completed",
