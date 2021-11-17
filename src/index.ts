@@ -22,6 +22,7 @@ export {
     UserEventType
 } from "./data/EventType";
 export type { EventType } from "./data/EventType";
+export { GradingSchemeOptions } from "./data/GradingSchemeOptions";
 export { NotificationType } from "./data/NotificationType";
 export {
     ProgrammingLanguage,
