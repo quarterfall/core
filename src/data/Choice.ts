@@ -4,6 +4,5 @@ export interface Choice {
     text?: string;
     correct?: boolean;
     correctScore?: number;
-    missingScore?: number;
     wrongScore?: number;
 }

@@ -6,4 +6,5 @@ export enum BlockType {
     OpenQuestion = "openQuestion",
     CodeQuestion = "codeQuestion",
     DatabaseQuestion = "databaseQuestion",
+    FileUploadQuestion = "fileUploadQuestion"
 }
