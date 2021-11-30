@@ -1,6 +1,6 @@
 {
     "name": "@quarterfall/core",
-    "version": "0.0.16",
+    "version": "0.0.17",
     "description": "Core data types and utilities of the Quarterfall platform.",
     "main": "dist/index.js",
     "scripts": {
@@ -18,10 +18,14 @@
     },
     "homepage": "https://github.com/quarterfall/core#readme",
     "devDependencies": {
+        "@types/validator": "^13.7.0",
         "prettier": "^2.4.1",
         "typescript": "^4.4.4"
     },
     "prettier": {
         "tabWidth": 4
+    },
+    "dependencies": {
+        "validator": "^13.7.0"
     }
 }
