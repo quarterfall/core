@@ -7,6 +7,7 @@ export enum ProgrammingLanguage {
     haskell = "haskell",
     java = "java",
     javascript = "javascript",
+    json = "json",
     markup = "markup",
     python = "python",
     sql = "sql",
@@ -25,6 +26,7 @@ export const supportedLanguagesSyntaxHighlighting = [
     ProgrammingLanguage.javascript,
     ProgrammingLanguage.python,
     ProgrammingLanguage.java,
+    ProgrammingLanguage.json,
     ProgrammingLanguage.sql,
 ];
 
