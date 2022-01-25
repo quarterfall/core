@@ -1,3 +1,5 @@
+export { getParentPermission, Permission } from "./access/Permissions";
+export { courseRoles, organizationRoles, RoleType } from "./access/RoleType";
 export { arrayMove } from "./Array";
 export type { ArrayMoveOptions } from "./Array";
 export type { Action } from "./data/Action";
@@ -35,6 +37,9 @@ export { StickerType } from "./data/StickerType";
 export type { UnitTest } from "./data/UnitTest";
 export { generateId } from "./IdGenerator";
 export type { AllowedCharacters } from "./IdGenerator";
+export { ampm, fallbackLanguage, systemLanguages } from "./Language";
+export { extractErrorCode, hasErrorCode, ServerError } from "./ServerError";
+export { addNumberToString, ellipsis, replaceQuotes } from "./String";
 export { Url } from "./Url";
 export {
     equals,
