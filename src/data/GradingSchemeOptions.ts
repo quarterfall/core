@@ -1,6 +1,10 @@
 export enum GradingSchemeOptions {
-    letterGrade = "letterGrade",
-    dutchGrade = "dutchGrade",
-    dutchGradeRounded = "dutchGradeRounded",
     scoreAsGrade = "scoreAsGrade",
+    roundedToIntegerGrade = "roundedToInteger",
+    roundedToHalvesGrade = "roundedToHalves",
+    dutchGrade = "dutchGrade",
+    passFailGrade = "passFailGrade",
+    usLetterGrade = "usLetterGrade",
+    cdLetterGrade = "cdLetterGrade",
+    auLetterGrade = "auLetterGrade",
 }
