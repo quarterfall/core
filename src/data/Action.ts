@@ -1,5 +1,6 @@
 import { ActionType } from "./ActionType";
 import { DatabaseDialect } from "./DatabaseDialect";
+import { IOTest } from "./IOTest";
 import { UnitTest } from "./UnitTest";
 
 export interface Action {
@@ -20,6 +21,7 @@ export interface Action {
     answerEmbedding?: string;
     imports?: string;
     tests?: UnitTest[];
+    ioTests?: IOTest[];
     hideFeedback?: boolean;
     teacherOnly?: boolean;
 }

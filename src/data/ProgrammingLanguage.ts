@@ -39,3 +39,9 @@ export const supportedLanguagesUnitTesting = [
     ProgrammingLanguage.java,
     ProgrammingLanguage.csharp,
 ];
+
+// Languages with io testing support
+export const supportedLanguagesIOTesting = [
+    ProgrammingLanguage.python,
+    ProgrammingLanguage.java,
+];
