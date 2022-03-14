@@ -25,9 +25,11 @@ export {
 } from "./data/EventType";
 export type { EventType } from "./data/EventType";
 export { GradingSchemeOptions } from "./data/GradingSchemeOptions";
+export type { IOTest } from "./data/IOTest";
 export { NotificationType } from "./data/NotificationType";
 export {
     ProgrammingLanguage,
+    supportedLanguagesIOTesting,
     supportedLanguagesSyntaxHighlighting,
     supportedLanguagesUnitTesting,
 } from "./data/ProgrammingLanguage";

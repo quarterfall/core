@@ -5,5 +5,6 @@ export enum ActionType {
     Database = "database",
     Feedback = "feedback",
     UnitTest = "unitTest",
+    IOTest = "ioTest",
     Scoring = "scoring",
 }
