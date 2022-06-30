@@ -11,6 +11,7 @@ export enum ProgrammingLanguage {
     markup = "markup",
     python = "python",
     sql = "sql",
+    r = "r",
     other = "other",
 }
 
@@ -28,6 +29,7 @@ export const supportedLanguagesSyntaxHighlighting = [
     ProgrammingLanguage.java,
     ProgrammingLanguage.json,
     ProgrammingLanguage.sql,
+    ProgrammingLanguage.r,
 ];
 
 // Languages with unit testing support
