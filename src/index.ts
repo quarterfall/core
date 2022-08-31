@@ -10,6 +10,7 @@ export { AssessmentMethod } from "./data/AssessmentMethod";
 export { AssessmentType } from "./data/AssessmentType";
 export { BlockType } from "./data/BlockType";
 export type { Choice } from "./data/Choice";
+export { CloudcheckActionType } from "./data/CloudcheckActionType";
 export { courseImages, defaultCourseImage } from "./data/CourseImages";
 export { DatabaseDialect } from "./data/DatabaseDialect";
 export { EditorType } from "./data/EditorType";
