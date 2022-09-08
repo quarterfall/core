@@ -50,4 +50,6 @@ export const supportedLanguagesIOTesting = [
     ProgrammingLanguage.cpp,
     ProgrammingLanguage.java,
     ProgrammingLanguage.csharp,
+    ProgrammingLanguage.go,
+    ProgrammingLanguage.r,
 ];
