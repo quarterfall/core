@@ -30,6 +30,7 @@ export {
     UserEventType,
 } from "./data/EventType";
 export type { EventType } from "./data/EventType";
+export { ExitCode } from "./data/ExitCode";
 export { GradingSchemeOptions } from "./data/GradingSchemeOptions";
 export type { IOTest } from "./data/IOTest";
 export { NotificationType } from "./data/NotificationType";
