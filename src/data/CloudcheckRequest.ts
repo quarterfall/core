@@ -4,6 +4,10 @@ import { ProgrammingLanguage } from "./ProgrammingLanguage";
 
 export interface PipelineStepOptions {
     language: ProgrammingLanguage;
+    hideFeeback?: boolean;
+    answerEmbedding?: string;
+    languageData?: any;
+    stopOnMatch?: boolean;
     // For run code action
     code?: string;
     inputs?: { input?: string }[];
