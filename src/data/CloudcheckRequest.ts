@@ -22,9 +22,12 @@ export interface PipelineStepOptions {
     // For database action
     databaseDialect?: DatabaseDialect;
     databaseFileUrl?: string;
-    // For conditional text
+    // For conditional text action
+    condition?: string;
     textOnMatch?: string;
     textOnMismatch?: string;
+    // For scoring action
+    scoreExpression?: string;
 }
 
 export interface PipelineStep {
