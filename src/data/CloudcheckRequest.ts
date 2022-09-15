@@ -1,16 +1,22 @@
 import { CloudcheckActionType } from "./CloudcheckActionType";
 import { DatabaseDialect } from "./DatabaseDialect";
+import { IOTest } from "./IOTest";
 import { ProgrammingLanguage } from "./ProgrammingLanguage";
+import { UnitTest } from "./UnitTest";
 
 export interface PipelineStepOptions {
     language: ProgrammingLanguage;
-    hideFeeback?: boolean;
+    hideFeedback?: boolean;
     answerEmbedding?: string;
     languageData?: any;
     stopOnMatch?: boolean;
     // For run code action
     code?: string;
     inputs?: { input?: string }[];
+    // For unit test action
+    imports?: string;
+    tests?: UnitTest[];
+    ioTests?: IOTest[];
     // For run javascript
     sandbox?: any;
     external?: string[];
