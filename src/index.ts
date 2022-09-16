@@ -12,6 +12,7 @@ export { BlockType } from "./data/BlockType";
 export type { Choice } from "./data/Choice";
 export { CloudcheckActionType } from "./data/CloudcheckActionType";
 export type {
+    CloudcheckActionResponse,
     CloudcheckRequestBody,
     PipelineStep,
     PipelineStepOptions,
