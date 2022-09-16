@@ -1,6 +1,6 @@
 {
     "name": "@quarterfall/core",
-    "version": "0.0.31",
+    "version": "0.0.32",
     "description": "Core data types and utilities of the Quarterfall platform.",
     "main": "dist/index.js",
     "scripts": {

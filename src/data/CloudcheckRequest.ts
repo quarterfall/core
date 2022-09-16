@@ -49,3 +49,9 @@ export interface CloudcheckRequestBody {
     data: any;
     pipeline: PipelineStep[];
 }
+
+export interface CloudcheckActionResponse {
+    data?: any;
+    log: string[];
+    code: number;
+}
