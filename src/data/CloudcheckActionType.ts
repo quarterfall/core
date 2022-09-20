@@ -5,4 +5,5 @@ export enum CloudcheckActionType {
     database = "database",
     webhook = "webhook",
     conditional_text = "conditional_text",
+    qf = "qf",
 }
