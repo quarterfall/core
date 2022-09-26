@@ -5,7 +5,7 @@ import { ProgrammingLanguage } from "./ProgrammingLanguage";
 import { UnitTest } from "./UnitTest";
 
 export interface PipelineStepOptions {
-    language: ProgrammingLanguage;
+    language?: ProgrammingLanguage;
     hideFeedback?: boolean;
     answerEmbedding?: string;
     languageData?: any;
