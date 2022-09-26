@@ -6,4 +6,5 @@ export enum CloudcheckActionType {
     webhook = "webhook",
     conditional_text = "conditional_text",
     scoring = "scoring",
+    executeVMCode = "executeVMCode",
 }
