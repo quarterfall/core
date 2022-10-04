@@ -1,4 +1,12 @@
-import validator from "validator";
+import checkEquality from "validator/lib/equals";
+import checkEmail from "validator/lib/isEmail";
+import checkEmpty from "validator/lib/isEmpty";
+import checkFloat from "validator/lib/isFloat";
+import checkInt from "validator/lib/isInt";
+import checkJSON from "validator/lib/isJSON";
+import checkLength from "validator/lib/isLength";
+import checkUrl from "validator/lib/isURL";
+import checkMatch from "validator/lib/matches";
 import { Url } from "./Url";
 
 export const patterns = {
@@ -14,39 +22,39 @@ export const isFloat = (value: string): boolean => {
     if (value[value.length - 1] === "," || value[value.length - 1] === ".") {
         value = value.substring(0, value.length - 1);
     }
-    return validator.isFloat(value || "");
+    return checkFloat(value || "");
 };
 
 export const isJSON = (value: string): boolean => {
-    return validator.isJSON(value || "");
+    return checkJSON(value || "");
 };
 
 export const isURL = (value: string): boolean => {
-    return validator.isURL(value || "");
+    return checkUrl(value || "");
 };
 
 export const isEmail = (value: string): boolean => {
-    return validator.isEmail(value || "");
+    return checkEmail(value || "");
 };
 
 export const isEmpty = (value: string): boolean => {
-    return validator.isEmpty(value || "");
+    return checkEmpty(value || "");
 };
 
 export const required = (value: string): boolean => {
-    return !validator.isEmpty(value || "");
+    return !checkEmpty(value || "");
 };
 
 export const isVariable = (value: string): boolean => {
-    return validator.matches(value || "", patterns.variable);
+    return checkMatch(value || "", patterns.variable);
 };
 
 export const isYouTubeLink = (value: string): boolean => {
-    return validator.matches(value || "", patterns.youtube);
+    return checkMatch(value || "", patterns.youtube);
 };
 
 export const isYouTubeEmbedLink = (value: string): boolean => {
-    const m = validator.matches(value || "", patterns.youtube);
+    const m = checkMatch(value || "", patterns.youtube);
     const url = new Url(value || "");
     return (
         m &&
@@ -57,43 +65,43 @@ export const isYouTubeEmbedLink = (value: string): boolean => {
 };
 
 export const isGitUrl = (value: string): boolean => {
-    return validator.matches(value || "", patterns.github);
+    return checkMatch(value || "", patterns.github);
 };
 
 export const matches =
     (pattern: RegExp) =>
     (value: string): boolean => {
-        return validator.matches(value || "", pattern);
+        return checkMatch(value || "", pattern);
     };
 
 export const isLength =
     (options: { min?: number; max?: number }) =>
     (value: string): boolean => {
-        return validator.isLength(value || "", options);
+        return checkLength(value || "", options);
     };
 
 export const hasCapitals = (value: string): boolean => {
-    return validator.matches(value || "", /[A-Z]/);
+    return checkMatch(value || "", /[A-Z]/);
 };
 
 export const hasNumbers = (value: string): boolean => {
-    return validator.matches(value || "", /[0-9]/);
+    return checkMatch(value || "", /[0-9]/);
 };
 
 export const equals =
     (options: { comparison: number }) =>
     (value: string): boolean => {
-        return validator.equals(value || "", options.comparison.toString());
+        return checkEquality(value || "", options.comparison.toString());
     };
 
 export const notEquals =
     (options: { comparison: number }) =>
     (value: string): boolean => {
-        return !validator.equals(value || "", options.comparison.toString());
+        return !checkEquality(value || "", options.comparison.toString());
     };
 
 export const isInteger =
     (options: any) =>
     (value: string): boolean => {
-        return validator.isInt(value || "", options);
+        return checkInt(value || "", options);
     };
